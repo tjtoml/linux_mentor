@@ -2,8 +2,6 @@
 ===================
 The purpose of this project is to collect tutorials related to administration of linux systems in a unified, consistent format. We will also attempt to present information in a logical progression, so that someone with little or no knowledge or background in Linux Administration can start at the beginning and progress to a competent administrator.  
 
-Hey! I'm your first Markdown document in **StackEdit**[^stackedit]. Don't delete me, I'm very helpful! I can be recovered anyway in the **Utils** tab of the <i class="icon-cog"></i> **Settings** dialog.
-
 ----------
 
 
@@ -26,6 +24,7 @@ Instead there should be two separate tutorials:
 
 >**Installing and Configuring an nginx Web Server**
 >**Using haproxy to Load Balance Web Traffic** 
+
 ####Lessons
 Lessons are the application of skills developed in the tutorial section. In contrast to a tutorial, a lesson will *always* depend on other lessons or tutorials - if it does not, it is a tutorial. In other words, a tutorial outlines the basic tenets of usage and installation for a linux program or service (nginx), while a lesson leverages those basic tenets to create something useful (Load-Balanced WordPress using nginx and haproxy).
 
