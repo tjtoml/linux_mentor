@@ -6,14 +6,18 @@ This section will focus on familiarizing the complete neophyte with the linux op
 Configuration of Local Machine
 -------------
 We will have to assume that you have at least a somewhat modern computer running a 64-bit Operating System that has enough system resources for creating at least one **Virtual Machine** (VM). A virtual machine is a complete computer that is defined by software on your computer. It is effectively a computer within a computer, and is limited to a user-defined allotment of system resources. Virtual Machines are ubiquitous in modern linux administration, and being able to understand and use VMs effectively is essential. We will create a VM using commonly available software (unless you are already using a linux system, but if that's true, you don't really need to be here). 
-###What operating system are you currently using?
+
+####What operating system are you currently using?
  * Windows
  * Mac
  * Linux 
+
 ####Windows
-You should install [VirtualBox for Windows](http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-Win.exe). This is an automated installation that provides good defaults. After installation is complete (you will likely need to reboot), 
+You should install [VirtualBox for Windows](http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-Win.exe). This is an automated installation that provides good defaults. After installation is complete you will likely need to reboot. 
+
 ####Mac
 You should install [VirtualBox for Mac](http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-OSX.dmg). How to install a Mac program is beyond the scope of this tutorial. 
+
 ####Linux
 You're good, as far as having an appropriate environment to work in is concerned. If you wish to install virtualbox or another hypervisor, you should consult the documentation for your distribution of choice. 
 
