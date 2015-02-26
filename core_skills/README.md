@@ -18,7 +18,7 @@ You should install [VirtualBox for Mac](http://download.virtualbox.org/virtualbo
 ####**Linux**
 You're good, as far as having an appropriate environment to work in is concerned. If you wish to install virtualbox or another hypervisor, you should consult the documentation for your distribution of choice. 
 
-Our First VM: Your Environment
+First VM: Your Environment
 ------ 
  These instructions assume that you have successfully installed VirtualBox and have rebooted your computer if you were requested to. We will be installing Ubuntu 14.04 because it is easy to use, especially for beginners, has excellent documentation, and a large collection of packages are available for it. As you progress in your linux education, you may wish to change your Administration VM to another distribution, such as [Arch](http://archlinux.org) or [CentOS](http://centos.org). 
 ####Step 1: Download Ubuntu .iso
@@ -49,14 +49,19 @@ The default format of VDI is fine. I would recommend using a dynamically allocat
 
 I also recommend increasing the size to at least 20GB (provided that you have space available on your hard disk). 8GB is a the bare minimum. 
 
-####Change VM Settings
+####Step 3: Change VM Settings
 
 Once the VM is created, we still need to edit a few settings before we are ready to proceed. Select the newly created VM and click "Settings" at the top of the VirtualBox Window. 
 
-> Click "System" on the left, then the "Processor" Tab. Drag the "Proccessor(s)" slider to the edge of the green, giving your VM as much power as VirtualBox says is safe.
+Click "System" on the left, then the "Processor" Tab. Drag the "Proccessor(s)" slider to the edge of the green, giving your VM as much power as VirtualBox says is safe.
+![Processors](http://i.imgur.com/Nbf0qLG.png)
 
->  Click "Network" on the left, then change the "Attached To" on Adapter 1 to "Bridged Adapter". This will allow your VM to communicate with other devices on your local network, such as printers and other computers. This step is optional.
 
-> Finally, click "Storage" on the left. Click the "Empty" underneath "Controller: IDE".  With that selected, click the disc icon on the far right, and navigate to where you saved your Ubuntu iso. 
+Click "Network" on the left, then change the "Attached To" on Adapter 1 to "Bridged Adapter". This will allow your VM to communicate with other devices on your local network, such as printers and other computers. This step is optional.
+![Network](http://i.imgur.com/R7yUAgY.png)
 
-You are now ready to start your brand new VM and install Ubuntu. 
+Finally, click "Storage" on the left. Click the "Empty" underneath "Controller: IDE".  With that selected, click the disc icon on the far right, and navigate to where you saved your Ubuntu iso. 
+ 
+![DiscInserted](http://i.imgur.com/HxzGLO2.png)
+
+You are now ready to start your brand new VM and install Ubuntu. Click OK and move on to Installing Ubuntu
