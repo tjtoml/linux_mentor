@@ -7,18 +7,15 @@ Configuration of Local Machine
 -------------
 We will have to assume that you have at least a somewhat modern computer running a 64-bit Operating System that has enough system resources for creating at least one **Virtual Machine** (VM). A virtual machine is a complete computer that is defined by software on your computer. It is effectively a computer within a computer, and is limited to a user-defined allotment of system resources. Virtual Machines are ubiquitous in modern linux administration, and being able to understand and use VMs effectively is essential. We will create a VM using commonly available software (unless you are already using a linux system, but if that's true, you don't really need to be here). 
 
-####What operating system are you currently using?
- * Windows
- * Mac
- * Linux 
+###What operating system are you currently using?
 
-####Windows
+####**Windows**
 You should install [VirtualBox for Windows](http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-Win.exe). This is an automated installation that provides good defaults. After installation is complete you will likely need to reboot. 
 
-####Mac
+####**Mac**
 You should install [VirtualBox for Mac](http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-OSX.dmg). How to install a Mac program is beyond the scope of this tutorial. 
 
-####Linux
+####**Linux**
 You're good, as far as having an appropriate environment to work in is concerned. If you wish to install virtualbox or another hypervisor, you should consult the documentation for your distribution of choice. 
 
 Our First VM: Your Environment
@@ -29,7 +26,7 @@ You can either do a direct http download using your web browser: [Click here](ht
 
 Or download a torrent (recommended): [Click Here](http://releases.ubuntu.com/14.04.2/ubuntu-14.04.2-desktop-amd64.iso.torrent) 
 
-This file is quite large, so make sure you understand what you're getting into if you have a slow internet connection or limited bandwidth. It will also take quite a while, so we'll take a second to discuss .iso files. ISOs are disc images (a perfect, compressed copy of a CD or DVD). Most linux distributions are provided in the form of .iso files, and no matter which (major) distribution you select, the .iso will include everything you need to install the operating system on a machine, physical or virtual. It is very useful to have a copy of the .iso files for each distribution that you use regularly. 
+This file is quite large, so make sure you understand what you're getting in to if you have a slow internet connection or limited bandwidth. It will also take quite a while, so we'll take a second to discuss .iso files. ISOs are disc images (a perfect, compressed copy of a CD or DVD). Most linux distributions are provided in the form of .iso files, and no matter which (major) distribution you select, the .iso will include everything you need to install the operating system on a machine, physical or virtual. It is very useful to have a copy of the .iso files for each distribution that you use regularly. 
 
 ####Step 2: Create Virtual Machine
 Once the Ubuntu .iso is finished downloading, open VirtualBox. These instructions are (as far as I know - I don't have a Mac to test with) the same regardless of the operating system that you have VirtualBox installed on (the  VirtualBox **host**). In this situation, Ubuntu 14.04 will be the VirtualBox **guest**.  
