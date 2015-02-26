@@ -15,7 +15,7 @@ The tutorials section will assume that the knowledge and skills outlined in the 
 >Tutorial A details the setup of a bind based nameserver. Many custom options are configured, and the zone files are in a nonstandard format (this is a made-up example). Tutorial B details the setup of an nginx webserver and depends on the custom configuration from tutorial A, and includes instructions like "edit the zone file at `/non/standard/path` ". 
 
 >**Example of tutorial independence:**
->Tutorial A details the setup of a bind based nameserver. Many custom options are configured, and the zone files are in a nonstandard format (still made-up). Tutorial B details the setup of an nginx webserver and depends inludes instructions like "Add an A record pointing to web.example.com. If you do not know how to do this, please see the section on [DNS](#). 
+>Tutorial A details the setup of a bind based nameserver. Many custom options are configured, and the zone files are in a nonstandard format (still made-up). Tutorial B details the setup of an nginx webserver and depends inludes instructions like "Add an A record pointing to web.example.com. If you do not know how to do this, please see the section on [DNS](#)." 
 
 Tutorials are intended to detail the installation and configuration of a *single* service or program. This gets a bit fuzzy when things like LAMP stacks come into play, but as a basic rule of thumb a tutorial should be for the configuration of a single **server**.  For instance, a tutorial should not be entitled 
 >**Load Balancing Multiple nginx Servers using haproxy**
