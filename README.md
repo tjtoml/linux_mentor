@@ -23,6 +23,7 @@ Tutorials are intended to detail the installation and configuration of a *single
 Instead there should be two separate tutorials:
 
 >**Installing and Configuring an nginx Web Server**
+
 >**Using haproxy to Load Balance Web Traffic** 
 
 ####Lessons
