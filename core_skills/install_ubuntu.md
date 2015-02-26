@@ -36,3 +36,11 @@ Eventually, you will be presented with this screen:
 ![Restart](http://i.imgur.com/ms4bnLW.png)
 
 Go ahead and click Restart Now. Edit the VM settings to remove the .iso file. You may have to manually power off the VM by Right Clicking it in VirtualBox and selecting Close > Power Off before you can do this (I did). 
+
+After this is done, you should boot into a fresh system, but the window will probably be incredibly small and un-resizable. Click inside the VM's window and press Ctrl+Alt+T to open a terminal window. Type these commands, pressing enter after each. You will have to confirm your choices [Y/n]. This can be bypassed without pressing Y, you simply need to press enter. The capital letter indicates that this is the default option.
+
+`sudo apt-get update`
+`sudo apt-get upgrade`
+`sudo reboot now`
+
+This will fetch updates from the server, install the newest versions of the software on your VM, and reboot the machine. Once this is done, click "Devices" in the VM menu (in VirtualBox) and select "Insert Guest Additions CD image". This should trigger a pop-up asking if you want to install the software on the disk. You should be using the most recent version of VirtualBox, or this may fail. Reboot once more, and you should have a linux VM with a GUI and the proper screen resolution. You can also set the VM to full screen, and you will have the equivalent of a desktop linux OS. 
