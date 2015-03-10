@@ -35,7 +35,7 @@
     
 
         
-    <div class="book" data-level="1.2.1" data-basepath=".." data-revision="Tue Mar 10 2015 13:48:54 GMT-0500 (CDT)">
+    <div class="book" data-level="1.2.1" data-basepath=".." data-revision="Tue Mar 10 2015 17:00:36 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -147,6 +147,13 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3" data-path="01_core_skills/set_up_ssh.html">
+            
+            <span><b>1.3.</b> Set Up SSH</span>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -249,7 +256,7 @@
 <h4 id="-windows"><strong>Windows</strong></h4>
 <p>You should install <a href="http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-Win.exe" target="_blank">VirtualBox for Windows</a>. This is an automated installation that provides good defaults. After installation is complete you will likely need to reboot.</p>
 <h4 id="-mac"><strong>Mac</strong></h4>
-<p>You should install <a href="http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-OSX.dmg" target="_blank">VirtualBox for Mac</a>. How to install a Mac program is beyond the scope of this tutorial.</p>
+<p>You should install <a href="http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-OSX.dmg" target="_blank">VirtualBox for Mac</a>.</p>
 <h4 id="-linux"><strong>Linux</strong></h4>
 <p>You&apos;re good, as far as having an appropriate environment to work in is concerned. If you wish to install virtualbox or another hypervisor, you should consult the documentation for your distribution of choice.</p>
 <h2 id="first-vm-your-environment">First VM: Your Environment</h2>
@@ -268,16 +275,16 @@
 <p><img src="http://i.imgur.com/y4IEBop.png" alt="New Hard Drive" title="Hard Drive"></p>
 <p>Select &quot;Create a new virtual hard drive now&quot;.</p>
 <p>The default format of VDI is fine. I would recommend using a dynamically allocated virtual hard drive to save disk space, but if your computer is slower or older, it might be a good idea to preallocate the hard drive.</p>
-<p>I also recommend increasing the size to at least 20GB (provided that you have space available on your hard disk). 8GB is a the bare minimum.</p>
+<p>I also recommend increasing the size to at least 20GB (provided that you have space available on your hard disk). 8GB is the bare minimum.</p>
 <h4 id="step-3-change-vm-settings">Step 3: Change VM Settings</h4>
 <p>Once the VM is created, we still need to edit a few settings before we are ready to proceed. Select the newly created VM and click &quot;Settings&quot; at the top of the VirtualBox Window.</p>
 <p>Click &quot;System&quot; on the left, then the &quot;Processor&quot; Tab. Drag the &quot;Proccessor(s)&quot; slider to the edge of the green, giving your VM as much power as VirtualBox says is safe.
 <img src="http://i.imgur.com/Nbf0qLG.png" alt="Processors"></p>
-<p>Click &quot;Network&quot; on the left, then change the &quot;Attached To&quot; on Adapter 1 to &quot;Bridged Adapter&quot;. This will allow your VM to communicate with other devices on your local network, such as printers and other computers. This step is optional.
-<img src="http://i.imgur.com/R7yUAgY.png" alt="Network"></p>
+<p>Click &quot;Network&quot; on the left, then change the &quot;Attached To&quot; on Adapter 1 to &quot;Bridged Adapter&quot;. This will allow your VM to communicate with other devices on your local network, such as printers and other computers. This step is optional.</p>
+<p><img src="http://i.imgur.com/R7yUAgY.png" alt="Network"></p>
 <p>Finally, click &quot;Storage&quot; on the left. Click the &quot;Empty&quot; underneath &quot;Controller: IDE&quot;.  With that selected, click the disc icon on the far right, and navigate to where you saved your Ubuntu iso.</p>
 <p><img src="http://i.imgur.com/HxzGLO2.png" alt="DiscInserted"></p>
-<p>You are now ready to start your brand new VM and install Ubuntu. Click OK and move on to Installing Ubuntu</p>
+<p>You are now ready to start your brand new VM and install Ubuntu. Click OK and move on to Installing Ubuntu.</p>
 
                     
                     </section>

@@ -35,7 +35,7 @@
     
 
         
-    <div class="book" data-level="1.1" data-basepath=".." data-revision="Tue Mar 10 2015 13:48:54 GMT-0500 (CDT)">
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="Tue Mar 10 2015 17:00:36 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -147,6 +147,13 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3" data-path="01_core_skills/set_up_ssh.html">
+            
+            <span><b>1.3.</b> Set Up SSH</span>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -244,6 +251,21 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="before-you-begin">Before You Begin</h1>
+<p>You will need a few things before you get started.</p>
+<h2 id="a-way-to-provision-vms">A Way to Provision VMs</h2>
+<p>There are a lot of ways to get the resources necessarry to create and configure VMs. You can buy a dedicated server at a remote datacenter. You can go to NewEgg and order the parts for a spare machine to act as a VM host. You can check the server listings on eBay.... and on and on. The way I learned, and I assume the way many people are learning, is on as little money as possible, which in my opinion leaves the two options detailed below.</p>
+<h4 id="your-local-computer">Your Local Computer</h4>
+<p>If you are hoping to follow along with the tutorials to follow for free (without using a cloud hosting provider), you will need a powerful computer capable of running many Virtual Machines at once. The more processor cores and RAM that your machine has, the more VMs you will be able to create. If you go this route, you&apos;ll need to be comfortable creating new VMs with base installs of operating systems.</p>
+<h4 id="an-account-with-a-cloud-hosting-provider">An Account with a Cloud Hosting Provider</h4>
+<p>If you go this route, you will provision new servers in the cloud for a low hourly rate. I like and use<sup><a href="#fn_1" id="reffn_1" target="_blank">1</a></sup></p>
+<ul>
+<li><a href="https://www.digitalocean.com/?refcode=d51e7458ca49" target="_blank">DigitalOcean</a> (referral link)</li>
+<li><a href="http://www.vultr.com/?ref=6825035" target="_blank">Vultr</a> (referral link)</li>
+</ul>
+<p>  They have all kinds of promotions and coupons for free server time - just google around. <a href="http://www.lowendbox.com" target="_blank">LowEndBox</a> has also been of great help in the past. If you go this route, you should delete VMs after you have configured them so that your money or coupon goes further. If you have a <code>.edu</code> email address, the GitHub Student Developer Pack includes a domain and $100 in credit at DigitalOcean. This book is written with this route in mind. </p>
+<h2 id="a-domain">A Domain</h2>
+<p>If you got the GitHub Student Developer pack, you&apos;ll get a free <code>.me</code> domain name from <a href="http://www.namecheap.com/?aff=83584" target="_blank">NameCheap</a> (referral link). Even if you didn&apos;t get a domain for free, I recommend that you get one from NameCheap or another source. As long as your domain registrar allows you to register your own nameservers, it doesn&apos;t matter where you get it. You should have access to the email address provided by WHOIS (which is usually masked by your registrar). Having a domain is key for a lot of system administration topics. Take note that this does not necessarrily have to be a <code>.com</code> or <code>.me</code>. Whatever domain you can find cheapest is fine.</p>
+<p><sup><a href="#fn_1" id="reffn_1" target="_blank">1</a></sup> I like and use these because they are cheap and have datacenters near me geographically. Choose your cloud hosting provider accordingly.</p>
 
                     
                     </section>
