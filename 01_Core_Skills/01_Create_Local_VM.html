@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Core Skills | r/linux_mentor Knowledge Database</title>
+        <title>Create A Local VM | r/linux_mentor Knowledge Database</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.0-alpha.9">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../01_Core_Skills/01_Create_Local_VM.html" />
+    <link rel="next" href="../01_Core_Skills/02_Install_Ubuntu.html" />
     
     
-    <link rel="prev" href="../index.html" />
+    <link rel="prev" href="../01_Core_Skills/index.html" />
     
 
         
@@ -35,7 +35,7 @@
     
 
         
-    <div class="book" data-level="1" data-basepath=".." data-revision="Tue Mar 10 2015 07:31:21 GMT-0500 (CDT)">
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="Tue Mar 10 2015 07:31:21 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -65,7 +65,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1" data-path="01_Core_Skills/index.html">
+        <li class="chapter " data-level="1" data-path="01_Core_Skills/index.html">
             
                 
                     <a href="../01_Core_Skills/index.html">
@@ -81,7 +81,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1" data-path="01_Core_Skills/01_Create_Local_VM.html">
+        <li class="chapter active" data-level="1.1" data-path="01_Core_Skills/01_Create_Local_VM.html">
             
                 
                     <a href="../01_Core_Skills/01_Create_Local_VM.html">
@@ -222,22 +222,41 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="-r-linux-mentor-http-reddit-com-r-linux-mentor-core-skills"><a href="http://reddit.com/r/linux_mentor" target="_blank">r/linux_mentor</a> Core Skills</h1>
-<p>This section will focus on familiarizing the complete neophyte with the linux operating system, the basics of using a terminal emulator, ssh, and virtualization. After completing this section, you should be prepared to provision a new VM (either locally or via a cloud-hosting service) and follow along in a tutorial. </p>
-<hr>
-<h2 id="creating-a-local-work-environment">Creating a Local Work Environment</h2>
-<p>The first thing any linux administrator needs is an environment designed to interact with the servers he administers. Strictly speaking, one can get by with a SSH client like <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">PuTTy</a> that provides a console connection to a remote server, but I believe that the best way to learn is by immersion. Specifically, I think you should administer linux servers from a linux operating system. Why?</p>
-<ul>
-<li>You can write and scripts on a local system</li>
-<li>Key utilities are already included (a decent terminal emulator is key)</li>
-<li>You can run software on your local machine that interacts with remote systems natively</li>
-<li>Many more...</li>
-</ul>
-<p>This can be accomplished in two ways: you can either install a linux distribution to your local hard drive, or you can create a Virtual Machine (VM). I am not prepared to give up essential programs that are Windows only, so I elected to use the Virtual Machine approach. </p>
-<p>To get started, <a href="https://github.com/tjtoml/linux_mentor/blob/master/core_skills/create_local_vm.md" target="_blank">install VirtualBox and create a VM.</a> </p>
-<p>Once that is done, <a href="https://github.com/tjtoml/linux_mentor/blob/master/core_skills/install_ubuntu.md" target="_blank">install Ubuntu 14.04 on your new VM</a>. </p>
-<h2 id="setting-up-ssh">Setting up SSH</h2>
-<p>Secure SHell (ssh) is the linux administrator&apos;s swiss army knife. It provides a secure connection to a remote system that makes it as if you are typing commands on a local machine. It&apos;s easy to set up: check out setting up SSH. </p>
+                        <h2 id="configuration-of-local-machine">Configuration of Local Machine</h2>
+<p>We will have to assume that you have at least a somewhat modern computer running a 64-bit Operating System that has enough system resources for creating at least one <strong>Virtual Machine</strong> (VM). A virtual machine is a complete computer that is defined by software on your computer. It is effectively a computer within a computer, and is limited to a user-defined allotment of system resources. Virtual Machines are ubiquitous in modern linux administration, and being able to understand and use VMs effectively is essential. We will create a VM using commonly available software (unless you are already using a linux system, but if that&apos;s true, you don&apos;t really need to be here). </p>
+<h3 id="what-operating-system-are-you-currently-using">What operating system are you currently using?</h3>
+<h4 id="-windows"><strong>Windows</strong></h4>
+<p>You should install <a href="http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-Win.exe" target="_blank">VirtualBox for Windows</a>. This is an automated installation that provides good defaults. After installation is complete you will likely need to reboot. </p>
+<h4 id="-mac"><strong>Mac</strong></h4>
+<p>You should install <a href="http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-OSX.dmg" target="_blank">VirtualBox for Mac</a>. How to install a Mac program is beyond the scope of this tutorial. </p>
+<h4 id="-linux"><strong>Linux</strong></h4>
+<p>You&apos;re good, as far as having an appropriate environment to work in is concerned. If you wish to install virtualbox or another hypervisor, you should consult the documentation for your distribution of choice. </p>
+<h2 id="first-vm-your-environment">First VM: Your Environment</h2>
+<p> These instructions assume that you have successfully installed VirtualBox and have rebooted your computer if you were requested to. We will be installing Ubuntu 14.04 because it is easy to use, especially for beginners, has excellent documentation, and a large collection of packages are available for it. As you progress in your linux education, you may wish to change your Administration VM to another distribution, such as <a href="http://archlinux.org" target="_blank">Arch</a> or <a href="http://centos.org" target="_blank">CentOS</a>. </p>
+<h4 id="step-1-download-ubuntu-iso">Step 1: Download Ubuntu .iso</h4>
+<p>You can either do a direct http download using your web browser: <a href="http://mirror.pnl.gov/releases/14.04/ubuntu-14.04.2-desktop-amd64.iso" target="_blank">Click here</a></p>
+<p>Or download a torrent (recommended): <a href="http://releases.ubuntu.com/14.04.2/ubuntu-14.04.2-desktop-amd64.iso.torrent" target="_blank">Click Here</a> </p>
+<p>This file is quite large, so make sure you understand what you&apos;re getting in to if you have a slow internet connection or limited bandwidth. It will also take quite a while, so we&apos;ll take a second to discuss .iso files. ISOs are disc images (a perfect, compressed copy of a CD or DVD). Most linux distributions are provided in the form of .iso files, and no matter which (major) distribution you select, the .iso will include everything you need to install the operating system on a machine, physical or virtual. It is very useful to have a copy of the .iso files for each distribution that you use regularly. </p>
+<h4 id="step-2-create-virtual-machine">Step 2: Create Virtual Machine</h4>
+<p>Once the Ubuntu .iso is finished downloading, open VirtualBox. These instructions are (as far as I know - I don&apos;t have a Mac to test with) the same regardless of the operating system that you have VirtualBox installed on (the  VirtualBox <strong>host</strong>). In this situation, Ubuntu 14.04 will be the VirtualBox <strong>guest</strong>.  </p>
+<p><img src="http://i.imgur.com/AFtjxD4.png" alt="VirtualBox Top Bar"></p>
+<p>Click &quot;New&quot; and make the settings match this:</p>
+<p><img src="http://i.imgur.com/E47OBGY.png" alt="New VM"></p>
+<p>You will be presented with a slider that allows you to select the amount of memory (RAM) that the VM is allowed to use. It should be noted that the VM does not use all of this memory all the time - this is the maximum that the VM is allowed to use. For this specific purpose (a management VM that will use a GUI), you should drag the slider to the far right of the green section. Other VMs with different purposes will have different settings. If VirtualBox says that the maximum recommended amount of RAM is less than 1024, you will probably have issues. </p>
+<p>After that is done, you should be presented with a window similar to this:</p>
+<p><img src="http://i.imgur.com/y4IEBop.png" alt="New Hard Drive" title="Hard Drive"></p>
+<p>Select &quot;Create a new virtual hard drive now&quot;.   </p>
+<p>The default format of VDI is fine. I would recommend using a dynamically allocated virtual hard drive to save disk space, but if your computer is slower or older, it might be a good idea to preallocate the hard drive. </p>
+<p>I also recommend increasing the size to at least 20GB (provided that you have space available on your hard disk). 8GB is a the bare minimum. </p>
+<h4 id="step-3-change-vm-settings">Step 3: Change VM Settings</h4>
+<p>Once the VM is created, we still need to edit a few settings before we are ready to proceed. Select the newly created VM and click &quot;Settings&quot; at the top of the VirtualBox Window. </p>
+<p>Click &quot;System&quot; on the left, then the &quot;Processor&quot; Tab. Drag the &quot;Proccessor(s)&quot; slider to the edge of the green, giving your VM as much power as VirtualBox says is safe.
+<img src="http://i.imgur.com/Nbf0qLG.png" alt="Processors"></p>
+<p>Click &quot;Network&quot; on the left, then change the &quot;Attached To&quot; on Adapter 1 to &quot;Bridged Adapter&quot;. This will allow your VM to communicate with other devices on your local network, such as printers and other computers. This step is optional.
+<img src="http://i.imgur.com/R7yUAgY.png" alt="Network"></p>
+<p>Finally, click &quot;Storage&quot; on the left. Click the &quot;Empty&quot; underneath &quot;Controller: IDE&quot;.  With that selected, click the disc icon on the far right, and navigate to where you saved your Ubuntu iso. </p>
+<p><img src="http://i.imgur.com/HxzGLO2.png" alt="DiscInserted"></p>
+<p>You are now ready to start your brand new VM and install Ubuntu. Click OK and move on to Installing Ubuntu</p>
 
                     
                     </section>
@@ -248,10 +267,10 @@
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        <a href="../01_Core_Skills/index.html" class="navigation navigation-prev " aria-label="Previous page: Core Skills"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../01_Core_Skills/01_Create_Local_VM.html" class="navigation navigation-next " aria-label="Next page: Create A Local VM"><i class="fa fa-angle-right"></i></a>
+        <a href="../01_Core_Skills/02_Install_Ubuntu.html" class="navigation navigation-next " aria-label="Next page: Install Ubuntu"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
