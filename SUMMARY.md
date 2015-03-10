@@ -1,4 +1,5 @@
 # Summary
+This is the table of contents. 
 * [Core Skills](01_Core_Skills/README.md)
 	* [Create A Local VM](01_Core_Skills/create_local_vm.md)
 	* [Install Ubuntu](01_Core_Skills/install_ubuntu.md)
