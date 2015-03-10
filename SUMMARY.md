@@ -1,5 +1,6 @@
-# Summary
-This is the table of contents. I am making another change to it. 
+# Modern Linux System Administration
+* [Introduction](README.MD)
+## Part 1: Man Your Battlestation
 * [Core Skills](01_Core_Skills/README.md)
 	* [Create A Local VM](01_Core_Skills/01_Create_Local_VM.md)
 	* [Install Ubuntu](01_Core_Skills/02_Install_Ubuntu.md)
