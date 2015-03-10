@@ -1,5 +1,5 @@
 {
-	"plugins": ["multipart", "disqus", ["tocstyles"],
+	"plugins": ["multipart", "disqus", "tocstyles"],
 	"pluginsConfig": {
 		"disqus": {
 			"shortName": "rlinuxmentorgitbook"
