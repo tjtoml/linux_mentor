@@ -5,22 +5,24 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Introduction | r/linux_mentor Knowledge Database</title>
+        <title>Install Ubuntu | r/linux_mentor Knowledge Database</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="The purpose of this project is to collect tutorials related to administration of linux systems in a unified, consistent format. We will also attempt to present information in a logical progression, so that someone with little or no knowledge or background in Linux Administration can start at the beginning and progress to a competent administrator.  ">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.0-alpha.9">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
         
     
     
-    <link rel="next" href="./01_Core_Skills/index.html" />
+    <link rel="next" href="../01_Core_Skills/setup_ssh.html" />
     
+    
+    <link rel="prev" href="../01_Core_Skills/create_local_vm.html" />
     
 
         
@@ -28,12 +30,12 @@
     <body>
         
         
-    <link rel="stylesheet" href="gitbook/style.css">
+    <link rel="stylesheet" href="../gitbook/style.css">
     
     
 
         
-    <div class="book" data-level="0" data-basepath="." data-revision="Tue Mar 10 2015 07:06:09 GMT-0500 (CDT)">
+    <div class="book" data-level="1.2" data-basepath=".." data-revision="Tue Mar 10 2015 07:06:09 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -50,10 +52,10 @@
 
         
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
-                    <a href="./index.html">
+                    <a href="../index.html">
                         <i class="fa fa-check"></i>
                         
                         Introduction
@@ -66,7 +68,7 @@
         <li class="chapter " data-level="1" data-path="01_Core_Skills/index.html">
             
                 
-                    <a href="./01_Core_Skills/index.html">
+                    <a href="../01_Core_Skills/index.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.</b>
@@ -82,7 +84,7 @@
         <li class="chapter " data-level="1.1" data-path="01_Core_Skills/create_local_vm.html">
             
                 
-                    <a href="./01_Core_Skills/create_local_vm.html">
+                    <a href="../01_Core_Skills/create_local_vm.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
@@ -94,10 +96,10 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="01_Core_Skills/install_ubuntu.html">
+        <li class="chapter active" data-level="1.2" data-path="01_Core_Skills/install_ubuntu.html">
             
                 
-                    <a href="./01_Core_Skills/install_ubuntu.html">
+                    <a href="../01_Core_Skills/install_ubuntu.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.2.</b>
@@ -112,7 +114,7 @@
         <li class="chapter " data-level="1.3" data-path="01_Core_Skills/setup_ssh.html">
             
                 
-                    <a href="./01_Core_Skills/setup_ssh.html">
+                    <a href="../01_Core_Skills/setup_ssh.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.3.</b>
@@ -210,7 +212,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >r/linux_mentor Knowledge Database</a>
+        <a href="../" >r/linux_mentor Knowledge Database</a>
     </h1>
 </div>
 
@@ -220,34 +222,32 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="-r-linux-mentor-http-reddit-com-r-linux-mentor-knowledge-database"><a href="http://reddit.com/r/linux_mentor" target="_blank">r/linux_mentor</a> Knowledge Database</h1>
-<p>The purpose of this project is to collect tutorials related to administration of linux systems in a unified, consistent format. We will also attempt to present information in a logical progression, so that someone with little or no knowledge or background in Linux Administration can start at the beginning and progress to a competent administrator.  </p>
-<hr>
-<h2 id="organization-of-this-repository">Organization of this Repository </h2>
-<h4 id="core-skills">Core Skills</h4>
-<p>This repository is separated into three<sup><a href="#fn_change" id="reffn_change" target="_blank">change</a></sup> major sections. The first is core skills and setup. This is intended to get you started if you have no previous experience using linux operating systems, and will provide the foundation for later tutorials. This section can probably be skipped if you feel comfortable installing and using a desktop distribution of linux, but it might be a good idea to read through even if you are very confident in your abilities. You never know when you might learn something.  </p>
-<h4 id="tutorials">Tutorials</h4>
-<p>The tutorials section will assume that the knowledge and skills outlined in the core skills section are successfully configured. Absolute understanding is not necessary: you will learn more as you follow along. A tutorial is a standalone document: it should not depend on other tutorials in order to function. </p>
-<blockquote>
-<p><strong>Example of tutorial dependence:</strong>
-Tutorial A details the setup of a bind based nameserver. Many custom options are configured, and the zone files are in a nonstandard format (this is a made-up example). Tutorial B details the setup of an nginx webserver and depends on the custom configuration from tutorial A, and includes instructions like &quot;edit the zone file at <code>/non/standard/path</code> &quot;. </p>
-<p><strong>Example of tutorial independence:</strong>
-Tutorial A details the setup of a bind based nameserver. Many custom options are configured, and the zone files are in a nonstandard format (still made-up). Tutorial B details the setup of an nginx webserver and depends inludes instructions like &quot;Add an A record pointing to web.example.com. If you do not know how to do this, please see the section on <a href="#" target="_blank">DNS</a>.&quot; </p>
-</blockquote>
-<p>Tutorials are intended to detail the installation and configuration of a <em>single</em> service or program. This gets a bit fuzzy when things like LAMP stacks come into play, but as a basic rule of thumb a tutorial should be for the configuration of a single <strong>server</strong>.  For instance, a tutorial should not be entitled </p>
-<blockquote>
-<p><strong>Load Balancing Multiple nginx Servers using haproxy</strong></p>
-</blockquote>
-<p>Instead there should be two separate tutorials:</p>
-<blockquote>
-<p><strong>Installing and Configuring an nginx Web Server</strong></p>
-<p><strong>Using haproxy to Load Balance Web Traffic</strong> </p>
-</blockquote>
-<h4 id="lessons">Lessons</h4>
-<p>Lessons are the application of skills developed in the tutorial section. In contrast to a tutorial, a lesson will <em>always</em> depend on other lessons or tutorials - if it does not, it is a tutorial. In other words, a tutorial outlines the basic tenets of usage and installation for a linux program or service (nginx), while a lesson leverages those basic tenets to create something useful (Load-Balanced WordPress using nginx and haproxy).</p>
-<h2 id="on-linking-reinventing-the-wheel-and-plagiarism">On Linking, Reinventing the Wheel, and Plagiarism</h2>
-<p> Obviously, any project that attempts to collect and organize tutorials on the internet will likely end up saying very nearly the same thing as a several hundred other people. In fact, many of my personal bookmarks are my favorite tutorials written by a great number of people. However, this repository is not a collection of links. A subreddit can handle that task.  If you have found an excellent tutorial elsewhere on the internet, and feel that it warrants inclusion into this repository, you should recreate it in markdown, including an attribution (the original author&apos;s name) and a link to the original tutorial. You should also contact the original author and ask for permission before submitting a pull request. For full details, please consult the <a href="#ADDLINKLATER" target="_blank">style guide</a>.</p>
-<p><sup><a href="#fn_change" id="reffn_change" target="_blank">change</a></sup>:This is subject to change as the project evolves. </p>
+                        <h2 id="installing-ubuntu-14-04-desktop-as-a-virtualbox-guest">Installing Ubuntu 14.04 Desktop as a VirtualBox Guest</h2>
+<p>If you followed the instructions in the tutorial on <a href="https://github.com/tjtoml/linux_mentor/blob/master/core_skills/create_local_vm.md" target="_blank">installing VirtualBox and creating a management VM</a>, you are ready to continue. </p>
+<h2 id="start-the-vm">Start the VM</h2>
+<p>This one is easy. Just select your VM on the left and click &quot;Start&quot; at the top of the VirtualBox window. The VM will boot from the .iso image you provided, and after a minute or two you will be presented with a screen that looks like this: </p>
+<p><img src="http://i.imgur.com/rLHjRK1.png" alt="UbuntuLive"></p>
+<p>At this point, you should select your language on the left. </p>
+<h2 id="install">Install</h2>
+<p>Click &quot;Install Ubuntu&quot;, then check the box to download updates:</p>
+<p><img src="http://i.imgur.com/cUIeIXv.png" alt="Install1"></p>
+<p>We just created the VirtualBox disc image that the VM sees as its hard drive. Since there is no danger to our computer, we can accept the defaults that Ubuntu uses. Select &quot;Erase disk and Install Ubutnu&quot; and click &quot;Install Now&quot;: </p>
+<p><img src="http://i.imgur.com/ynOvHmH.png" alt="Install2"></p>
+<p>If you followed the recommendation to make the VirtualBox hard drive 20GB, this should proceed without a problem. If you did not, the installer may create a swap partition that takes up too much space, and the installer complains about not having enough disk space. If this is a problem, delete and recreate the VM with a larger hard drive.  </p>
+<p>Select your timezone and keyboard layout. Enter your name where it asks, but I strongly recommend changing the default settings that Ubuntu extrapolates from your name:</p>
+<p><img src="http://i.imgur.com/lvVZaHY.png" alt="UnamePwd"></p>
+<p>You may notice that I use a weak password. This VM is for my personal use, and will not come in to contact with any sensitive information. It is also located on my personal desktop computer, and I am not incredibly worried about that being compromised. Select a password with your environment in mind. </p>
+<p>You&apos;re almost done. Go grab a cup of coffee, because the actual installation takes a while. </p>
+<p><img src="http://i.imgur.com/XS6XJYE.png" alt="InstallingNow"></p>
+<h2 id="rebooting-into-your-new-system">Rebooting into Your New System</h2>
+<p>Eventually, you will be presented with this screen: 
+<img src="http://i.imgur.com/ms4bnLW.png" alt="Restart"></p>
+<p>Go ahead and click Restart Now. Edit the VM settings to remove the .iso file. You may have to manually power off the VM by Right Clicking it in VirtualBox and selecting Close &gt; Power Off before you can do this (I did). </p>
+<p>After this is done, you should boot into a fresh system, but the window will probably be incredibly small and un-resizable. Click inside the VM&apos;s window and press Ctrl+Alt+T to open a terminal window. Type these commands, pressing enter after each. You will have to confirm your choices [Y/n]. This can be bypassed without pressing Y, you simply need to press enter. The capital letter indicates that this is the default option.</p>
+<p><code>sudo apt-get update</code>
+<code>sudo apt-get upgrade</code>
+<code>sudo reboot now</code></p>
+<p>This will fetch updates from the server, install the newest versions of the software on your VM, and reboot the machine. Once this is done, click &quot;Devices&quot; in the VM menu (in VirtualBox) and select &quot;Insert Guest Additions CD image&quot;. This should trigger a pop-up asking if you want to install the software on the disk. You should be using the most recent version of VirtualBox, or this may fail. Reboot once more, and you should have a linux VM with a GUI and the proper screen resolution. You can also set the VM to full screen, and you will have the equivalent of a desktop linux OS. </p>
 
                     
                     </section>
@@ -258,14 +258,16 @@ Tutorial A details the setup of a bind based nameserver. Many custom options are
         </div>
 
         
+        <a href="../01_Core_Skills/create_local_vm.html" class="navigation navigation-prev " aria-label="Previous page: Create A Local VM"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./01_Core_Skills/index.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Core Skills"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="../01_Core_Skills/setup_ssh.html" class="navigation navigation-next " aria-label="Next page: Setup SSH"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-<script src="gitbook/app.js"></script>
+<script src="../gitbook/app.js"></script>
 
 <script>
 require(["gitbook"], function(gitbook) {
