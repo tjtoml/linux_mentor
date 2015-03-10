@@ -1,9 +1,8 @@
 {
-	"plugins": ["multipart", "disqus", "tocstyles"],
+	"plugins": ["multipart", "disqus"],
 	"pluginsConfig": {
 		"disqus": {
 			"shortName": "rlinuxmentorgitbook"
-		 	},
-		"tocstyles": ["", "decimal-leading-zero", "upper-roman", "lower-roman"] 
+		 	}
 	}
 }
