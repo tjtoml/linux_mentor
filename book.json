@@ -1,5 +1,5 @@
 {
-	"plugins": ["multipart", "disqus", "infinitescroll"],
+	"plugins": ["multipart", "disqus"],
 	"pluginsConfig": {
 		"disqus": {
 			"shortName": "rlinuxmentorgitbook"
