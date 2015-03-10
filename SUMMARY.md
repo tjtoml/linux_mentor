@@ -1,5 +1,9 @@
-# Modern Linux System Administration
-* [Core Skills](01_Core_Skills/README.md)
-	* [Create A Local VM](01_Core_Skills/01_Create_Local_VM.md)
-	* [Install Ubuntu](01_Core_Skills/02_Install_Ubuntu.md)
-	* [Setup SSH](01_Core_Skills/03_Setup_SSH.md)
+# Summary
+
+* [Introduction](Introduction.md)
+* [Getting Started](01_core_skills/README.md)
+   * [Before You Begin](01_core_skills/before_you_begin.md)
+   * [Prepare Your Battlestation](01_core_skills/prepare_your_battlestation.md)
+       * [Create a Local VM](01_core_skills/create_a_local_vm.md)
+       * [Install Ubuntu](01_core_skills/install_ubuntu.md)
+
