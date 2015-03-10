@@ -8,7 +8,7 @@ We will have to assume that you have at least a somewhat modern computer running
 You should install [VirtualBox for Windows](http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-Win.exe). This is an automated installation that provides good defaults. After installation is complete you will likely need to reboot.
 
 ####**Mac**
-You should install [VirtualBox for Mac](http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-OSX.dmg). How to install a Mac program is beyond the scope of this tutorial.
+You should install [VirtualBox for Mac](http://download.virtualbox.org/virtualbox/4.3.22/VirtualBox-4.3.22-98236-OSX.dmg).
 
 ####**Linux**
 You're good, as far as having an appropriate environment to work in is concerned. If you wish to install virtualbox or another hypervisor, you should consult the documentation for your distribution of choice.
@@ -42,7 +42,7 @@ Select "Create a new virtual hard drive now".
 
 The default format of VDI is fine. I would recommend using a dynamically allocated virtual hard drive to save disk space, but if your computer is slower or older, it might be a good idea to preallocate the hard drive.
 
-I also recommend increasing the size to at least 20GB (provided that you have space available on your hard disk). 8GB is a the bare minimum.
+I also recommend increasing the size to at least 20GB (provided that you have space available on your hard disk). 8GB is the bare minimum.
 
 ####Step 3: Change VM Settings
 
@@ -53,10 +53,11 @@ Click "System" on the left, then the "Processor" Tab. Drag the "Proccessor(s)" s
 
 
 Click "Network" on the left, then change the "Attached To" on Adapter 1 to "Bridged Adapter". This will allow your VM to communicate with other devices on your local network, such as printers and other computers. This step is optional.
+
 ![Network](http://i.imgur.com/R7yUAgY.png)
 
 Finally, click "Storage" on the left. Click the "Empty" underneath "Controller: IDE".  With that selected, click the disc icon on the far right, and navigate to where you saved your Ubuntu iso.
 
 ![DiscInserted](http://i.imgur.com/HxzGLO2.png)
 
-You are now ready to start your brand new VM and install Ubuntu. Click OK and move on to Installing Ubuntu
+You are now ready to start your brand new VM and install Ubuntu. Click OK and move on to Installing Ubuntu.
